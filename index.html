@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pebbles NFT Collection - Tiny stones. Big personalities.</title>
+  <meta name="description" content="A premium, artistic, and playful NFT collection of small realistic pebbles with googly eyes and big personalities.">
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Background Decorative Shapes -->
+  <div class="bg-decorations">
+    <div class="floating-pebble floating-pebble-1"></div>
+    <div class="floating-pebble floating-pebble-2"></div>
+    <div class="floating-pebble floating-pebble-3"></div>
+  </div>
+
+  <!-- Navigation Header -->
+  <header class="header-nav" id="main-header">
+    <div class="container nav-container">
+      <a href="#" class="logo" id="nav-logo">
+        <div class="logo-icon">
+          <div class="logo-icon-pupil-1" id="logo-pupil-l"></div>
+          <div class="logo-icon-pupil-2" id="logo-pupil-r"></div>
+        </div>
+        <span class="logo-text">pebbles</span>
+      </a>
+      
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-link"><a href="#about">About</a></li>
+          <li class="nav-link"><a href="#gallery">Gallery</a></li>
+          <li class="nav-link"><a href="#traits">Traits</a></li>
+        </ul>
+      </nav>
+
+      <!-- Direct Link OpenSea Header CTA -->
+      <a href="https://opensea.io/collection/pebbles-887171424/overview" target="_blank" class="opensea-nav-btn" id="nav-opensea-btn">
+        <svg width="14" height="14" viewBox="0 0 40 40" fill="currentColor" style="display: inline-block; vertical-align: middle;" aria-hidden="true">
+          <path d="M32.89 25.13c-.02-.07-.06-.13-.11-.18-.05-.05-.12-.09-.19-.11l-9.15-2.45a.987.987 0 0 0-.51 0l-9.15 2.45c-.07.02-.14.06-.19.11-.05.05-.09.11-.11.18-.02.08-.03.15-.02.23.01.07.04.14.08.2l4.22 6.03c.09.13.22.24.37.31.15.07.32.1.48.09h8.86c.17.01.33-.02.48-.09.15-.07.28-.18.37-.31l4.22-6.03c.04-.06.07-.13.08-.2.01-.08 0-.15-.02-.23Z"/>
+          <path d="M19.78 4.26c-.05-.08-.12-.14-.2-.19-.08-.04-.18-.07-.27-.07-.1 0-.19.03-.27.07-.08.05-.15.11-.2.19L8.16 21.67c-.04.06-.06.13-.06.21 0 .08.02.15.06.21.04.06.09.11.16.15.06.03.14.05.21.05h10.97V4.26Z"/>
+          <path d="M20.22 4.26v18.03h10.97c.07 0 .15-.02.21-.05.06-.03.12-.08.16-.15.04-.06.06-.13.06-.21 0-.08-.02-.15-.06-.21L20.69 4.26c-.05-.08-.12-.14-.2-.19-.08-.04-.18-.07-.27-.07s-.19.03-.27.07c-.08.05-.15.11-.2.19Z"/>
+        </svg> Adopt on OpenSea
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero-sec">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-tag">Artistic Collectibles</span>
+        <h1 class="hero-title">Tiny stones.<br><span>Big personalities.</span></h1>
+        <p class="hero-tagline">A playful, premium digital art gallery showcasing uniquely expressive hand-dressed pebble characters.</p>
+        <div class="hero-cta">
+          <a href="https://opensea.io/collection/pebbles-887171424/overview" target="_blank" class="btn btn-primary" id="cta-opensea-btn">
+            <svg width="16" height="16" viewBox="0 0 40 40" fill="currentColor" style="display: inline-block; vertical-align: middle; margin-right: 4px;" aria-hidden="true">
+              <path d="M32.89 25.13c-.02-.07-.06-.13-.11-.18-.05-.05-.12-.09-.19-.11l-9.15-2.45a.987.987 0 0 0-.51 0l-9.15 2.45c-.07.02-.14.06-.19.11-.05.05-.09.11-.11.18-.02.08-.03.15-.02.23.01.07.04.14.08.2l4.22 6.03c.09.13.22.24.37.31.15.07.32.1.48.09h8.86c.17.01.33-.02.48-.09.15-.07.28-.18.37-.31l4.22-6.03c.04-.06.07-.13.08-.2.01-.08 0-.15-.02-.23Z"/>
+              <path d="M19.78 4.26c-.05-.08-.12-.14-.2-.19-.08-.04-.18-.07-.27-.07-.1 0-.19.03-.27.07-.08.05-.15.11-.2.19L8.16 21.67c-.04.06-.06.13-.06.21 0 .08.02.15.06.21.04.06.09.11.16.15.06.03.14.05.21.05h10.97V4.26Z"/>
+              <path d="M20.22 4.26v18.03h10.97c.07 0 .15-.02.21-.05.06-.03.12-.08.16-.15.04-.06.06-.13.06-.21 0-.08-.02-.15-.06-.21L20.69 4.26c-.05-.08-.12-.14-.2-.19-.08-.04-.18-.07-.27-.07s-.19.03-.27.07c-.08.05-.15.11-.2.19Z"/>
+            </svg> Adopt on OpenSea
+          </a>
+          <a href="#gallery" class="btn btn-secondary" id="cta-explore-btn">Explore Gallery</a>
+        </div>
+      </div>
+      
+      <!-- Interactive Large Eye-Tracking Pebble Widget -->
+      <div class="hero-showcase">
+        <div class="hero-showcase-backdrop"></div>
+        <div class="interactive-pebble" id="hero-interactive-pebble">
+          <div class="pebble-eyes">
+            <div class="googly-eye" id="eye-left">
+              <div class="pupil" id="pupil-left"></div>
+            </div>
+            <div class="googly-eye" id="eye-right">
+              <div class="pupil" id="pupil-right"></div>
+            </div>
+          </div>
+          <div class="pebble-mouth" id="pebble-hero-mouth"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      
+      <!-- Centered Section Header -->
+      <div class="gallery-header">
+        <span class="editorial-tag">The Philosophy</span>
+        <h2 class="gallery-title">An homage to simplicity, humor, and digital craft.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-frame" id="about-pebble-frame">
+          <!-- Renders the clay pebble NFT image -->
+          <img src="assets/pebble-clay.jpg" alt="Pebble NFT Clay" class="about-image" id="about-img-preview">
+        </div>
+        <div class="about-content">
+          <p class="about-text">Deep in the quiet streams and gentle shores, small stones have developed rather large personalities. **Pebbles** is a fine-art collection of 6,666 unique, digitally-curated realistic stones.</p>
+          <p class="about-text">By placing expressive plastic googly eyes and playful hand-inked mouths onto high-definition photography of organic stones, we've created a digital gallery that is whimsically simple yet exceptionally premium. No cyberpunk darkness. No bloated web3 clutter. Just warm, tactile joy on cheerful solid backdrops.</p>
+          
+          <div class="about-stats">
+            <div class="stat-item">
+              <h3 id="stat-count">6,666</h3>
+              <p>Unique Stones</p>
+            </div>
+            <div class="stat-item">
+              <h3 id="stat-traits">120+</h3>
+              <p>Handcrafted Traits</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="gallery-header">
+        <span class="editorial-tag">Showcase</span>
+        <h2 class="gallery-title">Meet the Pebbles</h2>
+        <p>Browse through some of the individual stones in our gallery. Filter by their bright solid background traits.</p>
+      </div>
+
+      <!-- Trait Filters -->
+      <div class="gallery-filters" id="gallery-filter-buttons">
+        <button class="filter-btn active" data-filter="all">All Stones</button>
+        <button class="filter-btn" data-filter="blue">Sky Blue</button>
+        <button class="filter-btn" data-filter="clay">Terracotta</button>
+        <button class="filter-btn" data-filter="sage">Sage Green</button>
+        <button class="filter-btn" data-filter="dark">Forest Green</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" id="nft-gallery-grid">
+        
+        <!-- NFT Card 1: Blue -->
+        <div class="pebble-card" data-background="blue" id="card-pebble-408">
+          <div class="card-image-wrap">
+            <img src="assets/pebble-blue.jpg" alt="Pebble #408" id="card-img-408">
+          </div>
+          <div class="card-details">
+            <div class="card-info">
+              <span class="card-id">Pebble #408</span>
+              <span class="card-rarity">Rarity: 12.5%</span>
+            </div>
+            <span class="card-tag">Joyful</span>
+          </div>
+        </div>
+
+        <!-- NFT Card 2: Clay -->
+        <div class="pebble-card" data-background="clay" id="card-pebble-712">
+          <div class="card-image-wrap">
+            <img src="assets/pebble-clay.jpg" alt="Pebble #712" id="card-img-712">
+          </div>
+          <div class="card-details">
+            <div class="card-info">
+              <span class="card-id">Pebble #712</span>
+              <span class="card-rarity">Rarity: 8.2%</span>
+            </div>
+            <span class="card-tag">Surprised</span>
+          </div>
+        </div>
+
+        <!-- NFT Card 3: Sage -->
+        <div class="pebble-card" data-background="sage" id="card-pebble-291">
+          <div class="card-image-wrap">
+            <img src="assets/pebble-sage.jpg" alt="Pebble #291" id="card-img-291">
+          </div>
+          <div class="card-details">
+            <div class="card-info">
+              <span class="card-id">Pebble #291</span>
+              <span class="card-rarity">Rarity: 18.0%</span>
+            </div>
+            <span class="card-tag">Cute</span>
+          </div>
+        </div>
+
+        <!-- NFT Card 4: Dark Green -->
+        <div class="pebble-card" data-background="dark" id="card-pebble-903">
+          <div class="card-image-wrap">
+            <img src="assets/pebble-dark.jpg" alt="Pebble #903" id="card-img-903">
+          </div>
+          <div class="card-details">
+            <div class="card-info">
+              <span class="card-id">Pebble #903</span>
+              <span class="card-rarity">Rarity: 5.4%</span>
+            </div>
+            <span class="card-tag">Grinning</span>
+          </div>
+        </div>
+
+        <!-- NFT Card 5: Dark Green (Neutral) -->
+        <div class="pebble-card" data-background="dark" id="card-pebble-183">
+          <div class="card-image-wrap">
+            <img src="assets/pebble-green-neutral.jpg" alt="Pebble #183" id="card-img-183">
+          </div>
+          <div class="card-details">
+            <div class="card-info">
+              <span class="card-id">Pebble #183</span>
+              <span class="card-rarity">Rarity: 9.6%</span>
+            </div>
+            <span class="card-tag">Neutral</span>
+          </div>
+        </div>
+
+        <!-- NFT Card 6: Dark Green (Smile) -->
+        <div class="pebble-card" data-background="dark" id="card-pebble-528">
+          <div class="card-image-wrap">
+            <img src="assets/pebble-dark-smile.jpg" alt="Pebble #528" id="card-img-528">
+          </div>
+          <div class="card-details">
+            <div class="card-info">
+              <span class="card-id">Pebble #528</span>
+              <span class="card-rarity">Rarity: 14.1%</span>
+            </div>
+            <span class="card-tag">Joyful</span>
+          </div>
+        </div>
+
+        <!-- NFT Card 7: Blue (Speckled Smile) -->
+        <div class="pebble-card" data-background="blue" id="card-pebble-834">
+          <div class="card-image-wrap">
+            <img src="assets/pebble-blue-smile.jpg" alt="Pebble #834" id="card-img-834">
+          </div>
+          <div class="card-details">
+            <div class="card-info">
+              <span class="card-id">Pebble #834</span>
+              <span class="card-rarity">Rarity: 11.0%</span>
+            </div>
+            <span class="card-tag">Joyful</span>
+          </div>
+        </div>
+
+        <!-- NFT Card 8: Clay (Speckled Smile) -->
+        <div class="pebble-card" data-background="clay" id="card-pebble-346">
+          <div class="card-image-wrap">
+            <img src="assets/pebble-clay-smile.jpg" alt="Pebble #346" id="card-img-346">
+          </div>
+          <div class="card-details">
+            <div class="card-info">
+              <span class="card-id">Pebble #346</span>
+              <span class="card-rarity">Rarity: 7.8%</span>
+            </div>
+            <span class="card-tag">Joyful</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Traits Section -->
+  <section class="traits" id="traits">
+    <div class="container">
+      <div class="gallery-header">
+        <span class="editorial-tag">Rarity Structure</span>
+        <h2 class="gallery-title">Crafted Traits</h2>
+        <p>Each Pebble is procedurally generated from a diverse catalog of charming physical and artistic variables.</p>
+      </div>
+
+      <div class="traits-grid">
+        
+        <!-- Trait 1 -->
+        <div class="trait-category" id="trait-bg-card">
+          <div class="trait-icon"><i class="fa-solid fa-palette"></i></div>
+          <h3 class="trait-title">Backgrounds</h3>
+          <ul class="trait-list">
+            <li class="trait-item"><span class="trait-name">Sky Blue</span><span class="trait-pct">25%</span></li>
+            <li class="trait-item"><span class="trait-name">Terracotta</span><span class="trait-pct">20%</span></li>
+            <li class="trait-item"><span class="trait-name">Sage Green</span><span class="trait-pct">20%</span></li>
+            <li class="trait-item"><span class="trait-name">Forest Green</span><span class="trait-pct">15%</span></li>
+          </ul>
+        </div>
+
+        <!-- Trait 2 -->
+        <div class="trait-category" id="trait-eyes-card">
+          <div class="trait-icon"><i class="fa-solid fa-eye"></i></div>
+          <h3 class="trait-title">Eyes</h3>
+          <ul class="trait-list">
+            <li class="trait-item"><span class="trait-name">Classic Googly</span><span class="trait-pct">45%</span></li>
+            <li class="trait-item"><span class="trait-name">Heavy Lid</span><span class="trait-pct">25%</span></li>
+            <li class="trait-item"><span class="trait-name">Dink Pupils</span><span class="trait-pct">20%</span></li>
+            <li class="trait-item"><span class="trait-name">Shining Star</span><span class="trait-pct">10%</span></li>
+          </ul>
+        </div>
+
+        <!-- Trait 3 -->
+        <div class="trait-category" id="trait-mouth-card">
+          <div class="trait-icon"><i class="fa-solid fa-pen-clip"></i></div>
+          <h3 class="trait-title">Mouths</h3>
+          <ul class="trait-list">
+            <li class="trait-item"><span class="trait-name">Drawn Smile</span><span class="trait-pct">40%</span></li>
+            <li class="trait-item"><span class="trait-name">Cute 'W'</span><span class="trait-pct">25%</span></li>
+            <li class="trait-item"><span class="trait-name">Surprised 'O'</span><span class="trait-pct">20%</span></li>
+            <li class="trait-item"><span class="trait-name">Slight Smirk</span><span class="trait-pct">15%</span></li>
+          </ul>
+        </div>
+
+        <!-- Trait 4 -->
+        <div class="trait-category" id="trait-stone-card">
+          <div class="trait-icon"><i class="fa-solid fa-mountain"></i></div>
+          <h3 class="trait-title">Stones</h3>
+          <ul class="trait-list">
+            <li class="trait-item"><span class="trait-name">Grey Pebble</span><span class="trait-pct">35%</span></li>
+            <li class="trait-item"><span class="trait-name">Speckled Granite</span><span class="trait-pct">30%</span></li>
+            <li class="trait-item"><span class="trait-name">Pitted Basalt</span><span class="trait-pct">20%</span></li>
+            <li class="trait-item"><span class="trait-name">Chert Stone</span><span class="trait-pct">15%</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <a href="#" class="footer-logo" id="footer-brand">pebbles</a>
+      
+      <ul class="footer-socials">
+        <li class="social-link">
+          <a href="https://x.com/pebbles_Nft?s=20" target="_blank" aria-label="Twitter">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="display: block;">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+        </li>
+        <li class="social-link">
+          <a href="https://opensea.io/collection/pebbles-887171424/overview" target="_blank" aria-label="OpenSea">
+            <svg width="18" height="18" viewBox="0 0 40 40" fill="currentColor" style="display: block;">
+              <path d="M32.89 25.13c-.02-.07-.06-.13-.11-.18-.05-.05-.12-.09-.19-.11l-9.15-2.45a.987.987 0 0 0-.51 0l-9.15 2.45c-.07.02-.14.06-.19.11-.05.05-.09.11-.11.18-.02.08-.03.15-.02.23.01.07.04.14.08.2l4.22 6.03c.09.13.22.24.37.31.15.07.32.1.48.09h8.86c.17.01.33-.02.48-.09.15-.07.28-.18.37-.31l4.22-6.03c.04-.06.07-.13.08-.2.01-.08 0-.15-.02-.23Z"/>
+              <path d="M19.78 4.26c-.05-.08-.12-.14-.2-.19-.08-.04-.18-.07-.27-.07-.1 0-.19.03-.27.07-.08.05-.15.11-.2.19L8.16 21.67c-.04.06-.06.13-.06.21 0 .08.02.15.06.21.04.06.09.11.16.15.06.03.14.05.21.05h10.97V4.26Z"/>
+              <path d="M20.22 4.26v18.03h10.97c.07 0 .15-.02.21-.05.06-.03.12-.08.16-.15.04-.06.06-.13.06-.21 0-.08-.02-.15-.06-.21L20.69 4.26c-.05-.08-.12-.14-.2-.19-.08-.04-.18-.07-.27-.07s-.19.03-.27.07c-.08.05-.15.11-.2.19Z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      
+      <p class="footer-copyright" id="footer-text">&copy; 2026 Pebbles Art Project. Tiny stones, massive souls. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Custom Scripts -->
+  <script src="app.js"></script>
+</body>
+</html>
