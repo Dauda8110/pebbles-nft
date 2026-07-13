@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Soft shadow under the pebble -->
+  <ellipse cx="32" cy="52" rx="22" ry="6" fill="#D0C9BE" opacity="0.8" />
+  
+  <!-- Pebble body (organic stone shape with a warm, pebble-like grey color) -->
+  <path d="M 32,8 C 45,8 56,16 56,30 C 56,44 44,54 32,54 C 18,54 8,42 8,30 C 8,16 19,8 32,8 Z" fill="#a5a29c" stroke="#1C1B19" stroke-width="2" />
+  <path d="M 32,8 C 40,8 48,12 52,20 C 42,22 30,16 20,24 C 16,16 22,8 32,8 Z" fill="#c3c0ba" opacity="0.6"/>
+  
+  <!-- Left Eye -->
+  <circle cx="23" cy="28" r="9" fill="#FFFFFF" stroke="#1C1B19" stroke-width="2"/>
+  <circle cx="24" cy="28" r="4" fill="#1C1B19"/>
+  
+  <!-- Right Eye -->
+  <circle cx="41" cy="28" r="9" fill="#FFFFFF" stroke="#1C1B19" stroke-width="2"/>
+  <circle cx="40" cy="28" r="4" fill="#1C1B19"/>
+  
+  <!-- Smile -->
+  <path d="M 24,40 Q 32,47 40,40" stroke="#1C1B19" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

@@ -88,19 +88,41 @@ document.addEventListener('DOMContentLoaded', () => {
     pupil.style.transform = `translate(${tx}px, ${ty}px)`;
   }
 
-  // Handle cursor moves
+  // Handle cursor moves (Googly Eyes Tracking & Pebble 3D Tilt)
   window.addEventListener('mousemove', (e) => {
     const mouseX = e.clientX;
     const mouseY = e.clientY;
 
-    // Large Hero Pebble
+    // Large Hero Pebble Googly Eyes
     trackEye(eyeL, pupilL, mouseX, mouseY, 14);
     trackEye(eyeR, pupilR, mouseX, mouseY, 14);
+
+    // Large Hero Pebble 3D Dynamic Tilt (Micro-interaction)
+    const pebble = document.getElementById('hero-interactive-pebble');
+    if (pebble) {
+      const pRect = pebble.getBoundingClientRect();
+      const pCenterX = pRect.left + (pRect.width / 2);
+      const pCenterY = pRect.top + (pRect.height / 2);
+      const dx = mouseX - pCenterX;
+      const dy = mouseY - pCenterY;
+      const maxTilt = 12; // Maximum tilt angle in degrees
+      const tiltX = -Math.min(maxTilt, Math.max(-maxTilt, dy / 25));
+      const tiltY = Math.min(maxTilt, Math.max(-maxTilt, dx / 25));
+      pebble.style.transform = `rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale(1.02)`;
+    }
 
     // Mini Navigation Logo Pebble (tighter distance constraints)
     trackEye(document.querySelector('.logo-icon'), logoPupilL, mouseX, mouseY, 2);
     trackEye(document.querySelector('.logo-icon'), logoPupilR, mouseX, mouseY, 2);
   });
+
+  // Reset Pebble 3D Tilt when mouse leaves
+  const pebble = document.getElementById('hero-interactive-pebble');
+  if (pebble) {
+    pebble.addEventListener('mouseleave', () => {
+      pebble.style.transform = 'rotateX(0deg) rotateY(0deg) scale(1)';
+    });
+  }
 
 
   // --- Gallery Filtering Engine ---

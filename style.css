@@ -679,9 +679,13 @@ p {
 }
 
 .pebble-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-8px) rotate(1deg);
   box-shadow: var(--shadow-tactile);
   border-color: var(--border-focus);
+}
+
+.pebble-card:nth-child(even):hover {
+  transform: translateY(-8px) rotate(-1deg);
 }
 
 .card-image-wrap {
